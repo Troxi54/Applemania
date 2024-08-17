@@ -181,33 +181,25 @@ button:hover {
   font-size: 2em;
 }
 
-@media (hover: none) {
-  #bd {
-    width: 500px;
-    gap: 15px;
-  }
-  
-  #bd > * {
-    width: 90px;
-    aspect-ratio: 1 / 1;
-    font-size: 1em;
-    position: relative;
-  }
-  
-  #bd > * > p {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  #mt, #mb {
-    transform: rotate(90deg);
-  }
+#bd {
+  width: 500px;
+  gap: 15px;
 }
 
-@media not (hover:none) {
-  #bd {
-    display: none;
-  }
+#bd > * {
+  width: 90px;
+  aspect-ratio: 1 / 1;
+  font-size: 1em;
+  position: relative;
+}
+
+#bd > * > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mt, #mb {
+  transform: rotate(90deg);
 }
